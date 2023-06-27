@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML & CSS">
+  <meta name="description" content="Resume">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="Container">
+  <section id="Resume">
+    <div class="Text_Container_Projects">
+      <div class="Animate_Animated Animate_Fade_In Title">Resume</div>
+      <div id="Main_Text"></div>
+      <div class="Projects">
+        <div class="Project_Cont">
+          <div class="Project_Title">Programming Languages</div>
+          <div class="Content_Text Animate_Animated Animate_Fade_In Animate_Delay"><div class="Position_Text">C / C++ / JavaScript / React
+          </div></div>
+        </div>
+        <div class="Project_Cont">
+          <div class="Project_Title">Faculty</div>
+          <div class="Content_Text Animate_Animated Animate_Fade_In Animate_Delay_1s"><div class="Position_Text">Studying Computer Science at the Faculty Of Computer Science and Engineering, Skopje since 2022
+          </div></div>
+        </div>
+        <div class="Project_Cont">
+          <div class="Project_Title">Hobbies</div>
+          <div class="Content_Text Animate_Animated Animate_Fade_In Animate_Delay_1s"><div class="Position_Text">Coding, Writing Screenplays, Reading Manga, and living life to the fullest
+          </div></div>
+        </div>
+        <div class="Project_Cont">
+          <div class="Project_Title">Work Experience</div>
+          <div class="Content_Text Animate_Animated Animate_Fade_In Animate_Delay_2s"><div class="Position_Text">Not yet, but I would love to change that! Contact me at <a href="mailto:andrejristovski500@gmail.com?subject=Questions%20for%20you&body=Dear%20sir,">andrejristovski500@gmail.com</a>
+          </div></div>
+        </div>
+      </div>
+      <div class="Project_Buttons">
+        <button> <a href="index.html">Back to Home</a></button>
+        <button> <a href="projects.html">Check my projects</a></button>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+<script>
+  let i = 0;
+  const txt = 'Education';
+  const speed = 50;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("main-text").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  typeWriter();
+</script>
+</html>
+<!-- <div id="Footer">Contact me:
+  <a href="mailto:andrejristovski500@gmail.com">andrejristovski500@gmail.com</a>
+</div> -->

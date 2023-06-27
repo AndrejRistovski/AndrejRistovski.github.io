@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML & CSS">
+  <meta name="description" content="Information">
+  <title>Projects</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="Container">
+  <section id="Projects">
+    <div class="Text_Container_Projects">
+      <div class="Animate_Animated Animate_Fade_In Title">Projects</div>
+      <div id="Main_Text"></div>
+      <div class="Projects">
+        <div class="Project_Cont" id="Project_1">
+          <div id="Project_Title_1" class="Project_Title Animate_Animated">Analysis on crypto and stocks</div>
+          <div class="Overlay Content_Text"><div class="Position_Text">Written in Python.
+            Basic application that imitates the functionality of any
+            super-market. You simply type in the barcode to get
+            information for a coin/stock, and you
+            receive data over a certain period of time.
+          </div>
+          </div>
+        </div>
+        <div class="Project_Cont" id="Project_2">
+          <div id="Project_Title_2" class="Project_Title Animate_Animated">Artificial Intelligence Bot - Bitty</div>
+          <div class="Overlay Content_Text"><div class="Position_Text">Created with JavaScript, CSS, HTML.
+            It is based on the concepts I have learned on various online courses.
+            Bitty is an AI bot application, that allows you to choose a number of
+            questions that it can answer for you, relating to crypto news.
+          </div>
+          </div>
+        </div>
+        <div class="Project_Cont" id="Project_3">
+          <div id="Project_Title_3" class="Project_Title Animate_Animated">Crypto Tracker</div>
+          <div class="Overlay Content_Text"><div class="Position_Text">The name says it all.
+            This application allows the costumer to track the activity of any and
+            all crypto coins, as well as stocks all around the world. The usability is limitless.
+          </div>
+          </div>
+        </div>
+        <div class="Project_Cont" id="Project_4">
+          <div id="Project_Title_4" class="Project_Title Animate_Animated">Finance-tracker.mk</div>
+          <div class="Overlay Content_Text"><div class="Position_Text">A project I am currently working on. Stay tuned...
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="Project_Buttons">
+        <button><a href="index.html">Back to Home</a></button>
+        <button><a href="resume.html">Explore my resume</a></button>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+<script>
+  let i = 0;
+  const txt = 'Coming soon! Hover for more information';
+  const speed = 20;
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("Main_Text").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  typeWriter();
+  const title1 = document.getElementById("Project_1");
+  title1.onmouseover=function (){
+    title1.classList.add("Selected");
+  }
+  title1.onmouseout=function()
+  {
+    title1.classList.remove("Selected");
+  }
+  const title2 = document.getElementById("Project_2");
+  title2.onmouseover=function (){
+    title2.classList.add("Selected");
+  }
+  title2.onmouseout=function()
+  {
+    title2.classList.remove("Selected");
+  }
+  const title3 = document.getElementById("Project_3");
+  title3.onmouseover=function (){
+    title3.classList.add("Selected");
+  }
+  title3.onmouseout=function()
+  {
+    title3.classList.remove("Selected");
+  }
+  const title4 = document.getElementById("Project_4");
+  title4.onmouseover=function (){
+    title4.classList.add("Selected");
+  }
+  title4.onmouseout=function()
+  {
+    title4.classList.remove("Selected");
+  }
+</script>
+</html>
